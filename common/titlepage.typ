@@ -1,6 +1,6 @@
 #let titlepage(
   title: "",
-  titleGerman: "",
+  titleEnglish: "",
   degree: "",
   program: "",
   supervisor: "",
@@ -30,13 +30,13 @@
   
   // --- Title Page ---
   v(1cm)
-  align(center, image("../figures/logo.png", width: 26%))
+  align(center, image("../figures/unisg_logo.png", width: 26%))
 
   v(5mm)
-  align(center, text(font: sans-font, 2em, weight: 700, "Technical University of Munich"))
+  align(center, text(font: sans-font, 2em, weight: 700, "University of St. Gallen"))
 
   v(5mm)
-  align(center, text(font: sans-font, 1.5em, weight: 100, "School of Computation, Information and Technology \n -- Informatics --"))
+  align(center, text(font: sans-font, 1.5em, weight: 100, "School of Management, Economics, Law, Social Sciences, /n  -- International Affairs and Computer Science --"))
   
   v(15mm)
 
@@ -47,7 +47,7 @@
   align(center, text(font: sans-font, 2em, weight: 700, title))
   
 
-  align(center, text(font: sans-font, 2em, weight: 500, titleGerman))
+  align(center, text(font: sans-font, 2em, weight: 500, titleEnglish))
 
   pad(
     top: 3em,
@@ -57,9 +57,9 @@
       columns: 2,
       gutter: 1em,
       strong("Author: "), author,
-      strong("Supervisor: "), supervisor,
-      strong("Advisors: "), advisors.join(", "),
-      strong("Start Date: "), startDate,
+      // strong("Supervisor: "), supervisor,
+      // strong("Advisors: "), advisors.join(", "),
+      // strong("Start Date: "), startDate,
       strong("Submission Date: "), submissionDate,
     )
   )
